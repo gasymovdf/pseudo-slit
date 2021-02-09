@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='pseudoslit',
-      version='0.0',
+      version='0.0.1',
       description='Psuedoslit for IFU-spectras',
       packages=['pseudoslit'],
       author_email='gasymov.df18@physics.msu.ru',

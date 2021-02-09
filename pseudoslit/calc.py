@@ -37,7 +37,7 @@ def pseudoslit(data, pa, width=1, precision=100, ax=None):
             res_w = np.sum(data_prec[yy[square], xx[square]], axis=0)
         else: 
             res_w = np.sum(data_prec[yy[square], xx[square], :], axis=0)
-        if (np.max(res_w)>0) and (np.sum(square)>0.99*precision**2):         
+        if (np.max(res_w)>0) and (np.sum(square)>0.99*width*precision**2):         
             r.append(j)
             result.append(res_w/np.sum(res_w))
             if ax is not None:
